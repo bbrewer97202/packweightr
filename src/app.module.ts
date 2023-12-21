@@ -1,14 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { Item } from './items/items.entity';
 import { ItemsModule } from './items/items.module';
 
-console.log(
-  '===> process.env.POSTGRES_PASSWORD:',
-  process.env.POSTGRES_PASSWORD,
-);
+const isDebug = process.env.DEBUG === 'true';
 
 @Module({
   imports: [
@@ -21,11 +16,9 @@ console.log(
       database: process.env.POSTGRES_DB,
       entities: [Item],
       synchronize: true,
-      logging: true,
+      logging: isDebug,
     }),
     ItemsModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}

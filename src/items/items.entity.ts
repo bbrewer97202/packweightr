@@ -13,7 +13,7 @@ export const weightUnit = {
   POUND: 'pound',
 } as const;
 
-export type ItemUnit = (typeof weightUnit)[keyof typeof weightUnit];
+export type ItemWeightUnit = (typeof weightUnit)[keyof typeof weightUnit];
 
 @Entity({ name: 'item' })
 export class Item {
