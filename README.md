@@ -1,15 +1,27 @@
+# Packweightr
+
+Create packing lists and manage the total weight of your gear for your next backpacking trip.
+
+
 ## Installation
 
-Create an .env file based on .env.example
+1. Install dependencies
 
 ```bash
 $ npm install
 ```
 
-### If running VS Code and there are typescript errors, you may need to run the workspace version instead of the vscode version.
-In the VS Code command palette, run the TypeScript: Select TypeScript version command. Make sure you have Use Workspace version selected.
+2. Create an .env file based on .env.example file.
 
-## Running the app
+3. If using vscode and getting typescript errors, you may need to "use workspace" version of typescript instead of vscode:
+.vscocde/settings.json with
+```json
+{
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
+```
+
+## Development
 
 Start database
 ```bash
