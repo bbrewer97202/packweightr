@@ -12,5 +12,9 @@
   "keywords": [],
   "author": "tknickman",
   "license": "ISC",
-  "packageManager": "pnpm@7.30.5"
+  "packageManager": "npm@9.6.7",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
