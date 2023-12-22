@@ -6,6 +6,9 @@ Create an .env file based on .env.example
 $ npm install
 ```
 
+### If running VS Code and there are typescript errors, you may need to run the workspace version instead of the vscode version.
+In the VS Code command palette, run the TypeScript: Select TypeScript version command. Make sure you have Use Workspace version selected.
+
 ## Running the app
 
 Start database
@@ -13,15 +16,9 @@ Start database
 $ docker-compose up -d
 ```
 
+For development
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ npm run dev
 ```
 
 ## Test
