@@ -2,6 +2,9 @@
 
 Create packing lists and manage the total weight of your gear for your next backpacking trip.
 
+## Overview
+
+Turbo monorepo with NestJS API backed by Postgres and React frontend.
 
 ## Installation
 
