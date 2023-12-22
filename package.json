@@ -1,0 +1,21 @@
+{
+  "name": "packweightr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "dev": "turbo dev",
+    "start": "node apps/api/dist/main"
+  },
+  "keywords": [],
+  "author": "bbrewer97202",
+  "license": "MIT",
+  "packageManager": "npm@9.6.7",
+  "workspaces": ["apps/*"],
+  "devDependencies": {
+    "turbo": "^1.11.2"
+  }
+}

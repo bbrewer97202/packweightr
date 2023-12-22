@@ -6,6 +6,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('api');
   app.useGlobalPipes(
     new ValidationPipe({
       disableErrorMessages: process.env.DEBUG !== 'true',
@@ -27,5 +28,6 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   await app.listen(process.env.port || 3000);
+  console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
