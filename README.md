@@ -1,6 +1,6 @@
 # Packweightr
 
-Create packing lists and manage the total weight of your gear for your next backpacking trip.
+Create packing lists and manage the total gear weight for your next backpacking trip.
 
 ## Overview
 
@@ -35,6 +35,8 @@ For development
 ```bash
 $ npm run dev
 ```
+API: http://localhost:3000/api
+Frontend: http://localhost:5173
 
 ## Test
 
